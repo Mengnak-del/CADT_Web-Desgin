@@ -1,0 +1,26 @@
+.Container {
+    width: auto;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    gap: 10px;
+    background-color: #555e92;
+    align-items: center;
+}
+.sidebar{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.menu{
+    display: none;
+}
+@media (max-width: 768px ){
+    .sidebar{
+        display: none;
+    }
+    .menu {
+        display: block;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+}
